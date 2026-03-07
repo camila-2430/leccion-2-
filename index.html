@@ -1,51 +1,123 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <style>
-        body { 
-            background-color: lightblue;        }
-            h1,h2,h3,h4 {
-                color: red;
-            }
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estructura Semántica en HTML</title>
+        body {
+            background-color: lightblue;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: red;
+        }
+
+        <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Estructura Semántica en HTML</title>
     </style>
 </head>
+
 <body>
 
-    <header>
-        <h1>Mi Blog de Tecnología</h1>
-        <p>Explorando el mundo del código día a día.</p>
-    </header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
 
-    <main>
-        <section>
-            <h2>Artículos Recientes</h2>
 
-            <article>
-                <h3>Introducción a HTML5</h3>
-                <p>HTML5 es el lenguaje de marcado estándar para crear páginas web. 
-                   Permite una estructura más clara y fácil de entender tanto para humanos como para máquinas.</p>
-                <img src="/assets/img/estructura-html.png" alt="">
+<div class="px-4 py-5 my-5 text-center">
+  <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+  
+  <h1 class="display-5 fw-bold text-body-emphasis">Bienvenido a mi Proyecto</h1>
+  
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4">En el mundo de Bootstrap, un Hero o Hero Section es esa sección grande, llamativa y de ancho completo que suele aparecer al principio de una página web, justo debajo de la barra de navegación.
+Su objetivo es simple: captar la atención del usuario de inmediato, comunicar de qué trata el sitio y ofrecer un llamado a la acción </p>
+    
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Empezar ahora</button>
+      <button type="button" class="btn btn-outline-secondary btn-lg px-4">Saber más</button>
+    </div>
+  </div>
+</div>
+
+
+
+    <div class="container mt-4">
+        <header>
+            <h1>Mi Blog de Tecnología</h1>
+            <p>Explorando el mundo del código día a día.</p>
+        </header>
+<button class="btn btn-success">Boton de prueba</button>
+        <main>
+            <section>
+                <h2>Artículos Recientes</h2>
+
+                <article>
+                    <h3>Introducción a HTML5</h3>
+                    <p>HTML5 es el lenguaje de marcado estándar para crear páginas web.
+                        Permite una estructura más clara y fácil de entender tanto para humanos como para máquinas.</p>
+                    <img src="/assets/img/estructura-html.png" alt="">
                 </article>
 
-            <article>
-                <h3>¿Por qué usar CSS?</h3>
-                <p>CSS nos permite dar estilo y diseño a nuestras etiquetas HTML, 
-                   haciendo que la experiencia del usuario sea mucho más agradable.</p>
-            </article>
-        </section>
+                <article>
+                    <h3>¿Por qué usar CSS?</h3>
+                    <p>CSS nos permite dar estilo y diseño a nuestras etiquetas HTML,
+                        haciendo que la experiencia del usuario sea mucho más agradable.</p>
+                </article>
+            </section>
 
-        <aside>
-            <h4>Sobre el Autor</h4>
-            <p>Hola, soy un entudiante de desarrollo web aprendiendo a usar etiquetas semánticas.</p>
-        </aside>
-    </main>
+            <aside>
+                <h4>Sobre el Autor</h4>
+                <p>Hola, soy un entudiante de desarrollo web aprendiendo a usar etiquetas semánticas.</p>
+            </aside>
+        </main>
 
-    <footer>
-       se usa para presentar el pie de pagina
-    </footer>
+        <footer>
+            se usa para presentar el pie de pagina
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+
+    </div>
 
 </body>
+
 </html>
